@@ -6,7 +6,7 @@ const Buy = () => {
   const router = useRouter();
   const handleBuy = () => {
     alert("Buy action triggered.");
-    router.push("/jb/exclusive");
+    router.push("/ts/exclusive");
   };
 
   return (

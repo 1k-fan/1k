@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <ArweaveWalletKit>
-        <body className={inter.className}>{children}</body>
+        <body className={`bg-[#F3F4F6]  ${inter.className}`}>{children}</body>
       </ArweaveWalletKit>
     </html>
   );
