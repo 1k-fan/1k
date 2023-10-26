@@ -34,7 +34,7 @@ const Marketplace = () => {
       {items.map((item) => (
         <div
           key={item.id}
-          className=" p-4 rounded-lg shadow-md flex gap-10 items-center"
+          className=" p-4 rounded-lg shadow-md flex gap-10 items-center hover:cursor-pointer hover:shadow-lg"
           onClick={() => router.push(`/item/${item.id}`)}
         >
           <Image

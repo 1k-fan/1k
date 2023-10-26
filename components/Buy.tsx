@@ -119,7 +119,7 @@ const Buy = () => {
                     35 of 100 Tokens Available
                   </div>
                   <button
-                    className="bg-blue-500 text-white rounded-lg px-8 py-2"
+                    className="bg-blue-500 text-white rounded-lg px-8 py-2 hover:shadow-sm hover:scale-105 hover:cursor-pointer transition-all"
                     onClick={handleBuy}
                   >
                     Buy Now
