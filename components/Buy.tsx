@@ -18,17 +18,17 @@ const Buy = () => {
             <Image
               width={800}
               height={800}
-              src="/ts.jpeg"
+              src="/platinum.jpeg"
               alt="NFT example"
               className="rounded-lg"
             />
             <div className="flex flex-col">
-              <div className="text-3xl py-4">Asset Rights</div>
+              <div className="text-2xl py-4 pt-8">Asset Rights</div>
               <div className="flex items-center justify-between">
                 <Image
                   src="/udl-modified.png"
-                  width={300}
-                  height={400}
+                  width={200}
+                  height={200}
                   alt="udl"
                 />
                 <a
@@ -44,9 +44,10 @@ const Buy = () => {
           </div>
           <div className="w-1/2 pl-8">
             <div className="text-gray-700 mb-4">
-              <div className="p-4 bg-white shadow-lg rounded-lg">
-                <h1 className="text-3xl font-bold mb-4">
-                  🌟 Platinum Tier Membership 🌟
+              <div className="p-4 bg-white shadow-lg rounded-lg flex flex-col">
+                <h1 className="text-3xl font-bold mb-8 place-self-center">
+                  {/* 🌟 Platinum Tier Membership 🌟 */}
+                  Platinum Tier Membership
                 </h1>
                 <h2 className="text-2xl font-semibold mb-3">
                   What's Included:
@@ -111,16 +112,19 @@ const Buy = () => {
                   </li>
                 </ul>
 
-                <h2 className="text-2xl font-semibold mb-3">
-                  Membership Cost:
-                </h2>
-                <p className="text-lg mb-6">5000 Tokens</p>
-                <button
-                  className="bg-blue-500 text-white rounded-lg px-8 py-2"
-                  onClick={handleBuy}
-                >
-                  Buy Now
-                </button>
+                {/* <h2 className="text-2xl font-semibold mb-3">Available:</h2> */}
+                {/* <p className="text-lg mb-6">35 of 100 Tokens Available</p> */}
+                <div className="justify-center items-center w-full flex flex-col">
+                  <div className="text-xl font-semibold mb-6 mt-3">
+                    35 of 100 Tokens Available
+                  </div>
+                  <button
+                    className="bg-blue-500 text-white rounded-lg px-8 py-2"
+                    onClick={handleBuy}
+                  >
+                    Buy Now
+                  </button>
+                </div>
               </div>
             </div>
           </div>

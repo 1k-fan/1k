@@ -5,27 +5,27 @@ const Marketplace = () => {
   const router = useRouter();
 
   const items = [
-    {
-      id: 1,
-      name: "Silver Tier",
-      price: "100 Tokens",
-      rating: 4.5,
-      image: "/silver.png",
-    },
-    {
-      id: 2,
-      name: "Gold Tier",
-      price: "1000 Tokens",
-      rating: 4.2,
-      image: "/silver.png",
-    },
-    {
-      id: 3,
-      name: "Platinum Tier",
-      price: "5000 Tokens",
-      rating: 4.7,
-      image: "/silver.png",
-    },
+      {
+          id: 1,
+          name: "Platinum Tier",
+          price: "35 of 100 Tokens Available",
+          rating: 4.7,
+          image: "/platinum.jpeg",
+      },
+      {
+          id: 2,
+          name: "Gold Tier",
+          price: "350 of 1000 Tokens Available",
+          rating: 4.2,
+          image: "/gold.jpeg",
+        },
+        {
+          id: 3,
+          name: "Silver Tier",
+          price: "3500 of 5000 Tokens Available",
+          rating: 4.5,
+          image: "/silver.jpeg",
+        },
   ];
 
   return (
@@ -34,10 +34,16 @@ const Marketplace = () => {
       {items.map((item) => (
         <div
           key={item.id}
-          className=" p-4rounded-lg shadow-md flex gap-10 items-center"
+          className=" p-4 rounded-lg shadow-md flex gap-10 items-center"
           onClick={() => router.push(`/item/${item.id}`)}
         >
-          <Image src={item.image} width={200} height={200} alt="image" />
+          <Image
+            src={item.image}
+            width={150}
+            height={150}
+            alt="image"
+            className="rounded-xl"
+          />
           <div className="">
             <h2 className="text-lg font-semibold">{item.name}</h2>
             <p className="text-gray-600 mb-2">{item.price}</p>
